@@ -135,8 +135,8 @@ void processStatus() {
   bool analogOk  = modbusReadAllAnalog(analogIn, IREG_AI_COUNT, analogOut, HREG_AQ_COUNT);
 
   JsonDocument outDoc;
-  outDoc["type"]    = "status";
-  outDoc["success"] = digitalOk && analogOk;
+  outDoc["action"]    = "status";
+  outDoc["state"] = digitalOk && analogOk;
 
   JsonArray inArr  = outDoc["digital"]["inputs"].to<JsonArray>();
   JsonArray outArr = outDoc["digital"]["outputs"].to<JsonArray>();

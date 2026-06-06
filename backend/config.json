@@ -1,0 +1,23 @@
+{
+    "SystemSettings":{
+        "MQTTData":{
+            "address":"h59f2942.ala.eu-central-1.emqxsl.com",
+            "SSL/TLSEncryption": true,
+            "port":8883
+        },
+        "polling_interval_sec":1
+    },
+    "FleetRoster":
+        {
+            "sterilizzatore":{
+                "ESPAddress":"ws://192.168.1.101:81/ws",
+                "status":"/status",
+                "command":"/command",
+                "response":"/response"
+            }
+        }
+}
+
+
+
+

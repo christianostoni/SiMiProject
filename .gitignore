@@ -1,0 +1,19 @@
+# Swift Package Manager (local dev dependency)
+LogoLink/
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Build artifacts
+build/
+DerivedData/
