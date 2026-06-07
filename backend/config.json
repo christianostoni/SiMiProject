@@ -5,7 +5,7 @@
             "SSL/TLSEncryption": true,
             "port":8883
         },
-        "polling_interval_sec":1
+        "polling_interval_sec":5
     },
     "FleetRoster":
         {
