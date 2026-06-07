@@ -39,6 +39,7 @@ struct SterilizzatoreDetailView: View {
                 }
             }
             .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
         .navigationTitle("Sterilizzatore")
         .navigationBarTitleDisplayMode(.inline)
@@ -58,7 +59,7 @@ private struct DebugMessagePanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Label("Messaggio non gestito", systemImage: "exclamationmark.bubble")
+            Label("Unhandled Message", systemImage: "exclamationmark.bubble")
                 .font(.caption)
                 .fontWeight(.semibold)
                 .foregroundStyle(.orange)
@@ -93,7 +94,7 @@ private struct MotorGroupCard: View {
     let group: MotorGroup
     let vm: MachineViewModel?
 
-    private let columns = Array(repeating: GridItem(.fixed(110), spacing: 10), count: 3)
+    private let columns = Array(repeating: GridItem(.flexible(minimum: 80), spacing: 10), count: 3)
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {

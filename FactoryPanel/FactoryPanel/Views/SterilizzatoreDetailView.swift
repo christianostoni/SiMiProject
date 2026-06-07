@@ -42,7 +42,7 @@ struct SterilizzatoreDetailView: View {
             }
             .padding(24)
         }
-        .navigationTitle("Sterilizzatore")
+        .navigationTitle("Sterilizer")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 ConnectionStateBadge(state: appVM.connectionState)
@@ -59,7 +59,7 @@ private struct DebugMessagePanel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Label("Messaggio non gestito", systemImage: "exclamationmark.bubble")
+            Label("Unhandled Message", systemImage: "exclamationmark.bubble")
                 .font(.caption)
                 .fontWeight(.semibold)
                 .foregroundStyle(.orange)

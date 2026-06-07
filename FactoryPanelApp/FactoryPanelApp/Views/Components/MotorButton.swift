@@ -25,7 +25,7 @@ struct MotorButton: View {
                     .lineLimit(2)
                     .minimumScaleFactor(0.75)
             }
-            .frame(width: 110, height: 92)
+            .frame(maxWidth: .infinity, minHeight: 92)
             .background(
                 isActive ? Color.green : Color(.secondarySystemBackground),
                 in: RoundedRectangle(cornerRadius: 18)

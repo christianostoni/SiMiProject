@@ -134,30 +134,30 @@ struct MotorGroup: Identifiable {
 }
 
 let sterilizzatoreGroups: [MotorGroup] = [
-    MotorGroup(title: "Palettizzatore", motors: [
-        MotorDefinition(displayName: "Nastro",        command: .nastro_palettizzatore,  output: .Q_nastro_palettizzatore),
-        MotorDefinition(displayName: "Corda",         command: .corda_palettizzatore,   output: .Q_corda_palettizzatore),
-        MotorDefinition(displayName: "Nastro Capov.", command: .nastro_capovolgitore,   output: .Q_nastro_capovol),
+    MotorGroup(title: "Palletizer", motors: [
+        MotorDefinition(displayName: "Belt",        command: .nastro_palettizzatore,  output: .Q_nastro_palettizzatore),
+        MotorDefinition(displayName: "Chain",       command: .corda_palettizzatore,   output: .Q_corda_palettizzatore),
+        MotorDefinition(displayName: "Flip Belt",   command: .nastro_capovolgitore,   output: .Q_nastro_capovol),
     ]),
-    MotorGroup(title: "Ingresso", motors: [
-        MotorDefinition(displayName: "Tappeto Magn.", command: .tappeto_magnetico,      output: .Q_tappeto_magnetico),
-        MotorDefinition(displayName: "Piatto Ingr.",  command: .piatto_ingr_scatole,    output: .Q_piatto_ingresso_scatole),
+    MotorGroup(title: "Inlet", motors: [
+        MotorDefinition(displayName: "Magnetic Mat", command: .tappeto_magnetico,    output: .Q_tappeto_magnetico),
+        MotorDefinition(displayName: "Inlet Plate",  command: .piatto_ingr_scatole,  output: .Q_piatto_ingresso_scatole),
     ]),
-    MotorGroup(title: "Raffreddatore", motors: [
-        MotorDefinition(displayName: "Nastro Uscita", command: .nastro_raffreddatore,            output: .Q_nastro_usc_raffreddatore),
-        MotorDefinition(displayName: "Motore",        command: .raffreddatore,                   output: .Q_raffreddatore),
-        MotorDefinition(displayName: "Nastro Ingr.",  command: .nastro_ingr_raffreddatore,       output: .Q_nastro_ingr_raffreddatore),
-        MotorDefinition(displayName: "Nastro Accum.", command: .nastro_accum_ingr_raffreddatore, output: .Q_nastro_ingr_accum_raffreddatore),
-        MotorDefinition(displayName: "Corda Carico",  command: .corda_carico_raffreddatore,      output: .Q_corda_carico_raffreddatore),
-        MotorDefinition(displayName: "Piatto 1",      command: .piatto1_carico_raffreddatore,    output: .Q_piatto1),
-        MotorDefinition(displayName: "Piatto 2",      command: .piatto2,                         output: .Q_piatto2),
-        MotorDefinition(displayName: "Piano Raffr.",  command: .piano_raffreddamento,            output: .Q_piano_raffreddamento),
+    MotorGroup(title: "Cooler", motors: [
+        MotorDefinition(displayName: "Output Belt",  command: .nastro_raffreddatore,            output: .Q_nastro_usc_raffreddatore),
+        MotorDefinition(displayName: "Motor",        command: .raffreddatore,                   output: .Q_raffreddatore),
+        MotorDefinition(displayName: "Inlet Belt",   command: .nastro_ingr_raffreddatore,       output: .Q_nastro_ingr_raffreddatore),
+        MotorDefinition(displayName: "Accum. Belt",  command: .nastro_accum_ingr_raffreddatore, output: .Q_nastro_ingr_accum_raffreddatore),
+        MotorDefinition(displayName: "Load Chain",   command: .corda_carico_raffreddatore,      output: .Q_corda_carico_raffreddatore),
+        MotorDefinition(displayName: "Plate 1",      command: .piatto1_carico_raffreddatore,    output: .Q_piatto1),
+        MotorDefinition(displayName: "Plate 2",      command: .piatto2,                         output: .Q_piatto2),
+        MotorDefinition(displayName: "Cooling Floor",command: .piano_raffreddamento,            output: .Q_piano_raffreddamento),
     ]),
-    MotorGroup(title: "Sterilizzatore", motors: [
-        MotorDefinition(displayName: "Nastro Carico",  command: .nastro_carico_sterilizzatore, output: .Q_nastro_carico_sterilizzatore),
-        MotorDefinition(displayName: "Catena Traino",  command: .catena_traino_sterilizzatore, output: .Q_traino_sterilizzatore),
-        MotorDefinition(displayName: "Corda Carico",   command: .corda_carico_sterilizzatore,  output: .Q_corda_carico_sterilizzatore),
-        MotorDefinition(displayName: "Nastro Scarico", command: .nastro_scarico_steril,        output: .Q_nastro_scarico_sterilizzatore),
-        MotorDefinition(displayName: "Piano Steril.",  command: .piano_sterilizzazione,        output: .Q_piano_sterilizzazione),
+    MotorGroup(title: "Sterilizer", motors: [
+        MotorDefinition(displayName: "Load Belt",    command: .nastro_carico_sterilizzatore, output: .Q_nastro_carico_sterilizzatore),
+        MotorDefinition(displayName: "Drive Chain",  command: .catena_traino_sterilizzatore, output: .Q_traino_sterilizzatore),
+        MotorDefinition(displayName: "Load Chain",   command: .corda_carico_sterilizzatore,  output: .Q_corda_carico_sterilizzatore),
+        MotorDefinition(displayName: "Unload Belt",  command: .nastro_scarico_steril,        output: .Q_nastro_scarico_sterilizzatore),
+        MotorDefinition(displayName: "Steril. Floor",command: .piano_sterilizzazione,        output: .Q_piano_sterilizzazione),
     ]),
 ]

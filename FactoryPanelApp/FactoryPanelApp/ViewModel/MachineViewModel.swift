@@ -67,7 +67,7 @@ final class MachineViewModel {
     var analogOutputs: [Int]   { lastStatus?.analogIO.outputs  ?? [] }
 
     var statusLabel: String {
-        guard lastStatus != nil else { return "In attesa..." }
+        guard lastStatus != nil else { return "Waiting..." }
         return isOnline ? "Online" : "Offline"
     }
 

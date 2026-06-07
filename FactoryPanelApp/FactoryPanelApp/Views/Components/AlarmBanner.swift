@@ -16,18 +16,18 @@ struct AlarmBanner: View {
                     .foregroundStyle(.red)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("ALLARME")
+                    Text("ALARM")
                         .font(.caption)
                         .fontWeight(.semibold)
                         .foregroundStyle(.secondary)
-                    Text("Bassa Temperatura")
+                    Text("Low Temperature")
                         .font(.headline)
                         .fontWeight(.bold)
                 }
 
                 Spacer()
 
-                Label("ATTIVO", systemImage: "exclamationmark.triangle.fill")
+                Label("ACTIVE", systemImage: "exclamationmark.triangle.fill")
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundStyle(.red)

@@ -23,9 +23,9 @@ struct ContentView: View {
                         .tag(machineVM.machine.id)
                 }
             }
-            .navigationTitle("Impianto")
+            .navigationTitle("Fabbrica SRL")
             .toolbar {
-                ToolbarItem(placement: .bottomBar) {
+                ToolbarItem(placement: .topBarTrailing) {
                     ConnectionStateBadge(state: appVM.connectionState)
                 }
             }
@@ -34,9 +34,9 @@ struct ContentView: View {
                 SterilizzatoreDetailView()
             } else {
                 ContentUnavailableView(
-                    "Seleziona una macchina",
+                    "Select a Machine",
                     systemImage: "gearshape.2",
-                    description: Text("Scegli una macchina dalla barra laterale.")
+                    description: Text("Choose a machine from the sidebar.")
                 )
             }
         }

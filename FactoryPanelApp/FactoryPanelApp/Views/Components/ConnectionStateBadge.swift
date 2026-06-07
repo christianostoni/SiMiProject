@@ -43,11 +43,11 @@ struct ConnectionStateBadge: View {
 
     private var label: String {
         switch state {
-        case .connected:             return "Connesso"
-        case .connecting:            return "Connessione..."
-        case .reconnecting(let n):   return "Riconnessione (\(n))"
-        case .disconnected:          return "Disconnesso"
-        case .failed(let e):         return "Errore: \(e.localizedDescription)"
+        case .connected:             return "Connected"
+        case .connecting:            return "Connecting..."
+        case .reconnecting(let n):   return "Reconnecting (\(n))"
+        case .disconnected:          return "Disconnected"
+        case .failed(let e):         return "Error: \(e.localizedDescription)"
         }
     }
 }
