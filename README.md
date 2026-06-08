@@ -1,13 +1,13 @@
 # SiMiProject
 
-**Industrial IoT Retrofit Platform — Apple Developer Academy · Year 2 Application**
+**Industrial IoT Retrofit Platform — Apple Developer Academy**
 *Christian Ostoni · June 2026*
 
 ---
 
 ## What Is This
 
-SiMiProject is an IIoT platform for retrofitting legacy PLC-controlled industrial machines with real-time remote monitoring and supervisory control — without modifying a single line of existing PLC logic. A Siemens LOGO! 8 PLC is made remotely controllable through a layered stack that terminates in a native iOS and visionOS application, connected via a TLS-encrypted MQTT broker.
+SiMiProject is an IoT platform for retrofitting legacy PLC-controlled industrial machines with real-time remote monitoring and supervisory control — without modifying a single line of existing PLC logic. A Siemens LOGO! 8 PLC is made remotely controllable through a layered stack that terminates in a native iOS and visionOS application, connected via a TLS-encrypted MQTT broker.
 
 ---
 
@@ -19,7 +19,7 @@ The zip you received contains this repository plus three additional files that a
 |---|---|---|
 | `technical_documentations.pages` | Apple Pages document | Full technical documentation of the project. Covers system architecture, cybersecurity model, spatial computing rationale, demo hardware setup, and network topology. **Read this first.** |
 | `demo_guide.pdf` | PDF | Step-by-step instructions for testing the live system. Covers both the iOS and visionOS apps, the recommended test sequence, and known limitations. |
-| `final_video.mov` | Video | Demo recording showing the physical electrical panel, the iOS app, and a live pump on/off cycle controlled via the full stack (Vision Pro → MQTT → Raspberry Pi → ESP8266 → MODBUS → PLC). |
+| `final_video.mov` | Video | Demo recording showing the physical electrical panel, the iOS app, and a live lamp on/off cycle controlled via the full stack (Vision Pro → MQTT → Raspberry Pi → ESP8266 → MODBUS → PLC). |
 
 ---
 
@@ -47,7 +47,7 @@ Native **visionOS** application targeting Apple Vision Pro. Displays real-time P
 
 ### `FactoryPanelApp/`
 
-Native **iOS** application for iPhone and iPad. Functionally identical to the visionOS app but adapted for the standard UIKit/SwiftUI idioms (NavigationSplitView with inline title, system background materials). Shares the same `LogoLink` dependency.
+Native **iOS** application for iPhone and iPad. Functionally identical to the visionOS app but adapted for the standard SwiftUI idioms (NavigationSplitView with inline title, system background materials). Shares the same `LogoLink` dependency.
 
 **Open with:** `FactoryPanelApp/FactoryPanelApp.xcodeproj` — requires Xcode 16+, iOS 17+.
 
